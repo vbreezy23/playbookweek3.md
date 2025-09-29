@@ -1,0 +1,7 @@
+Raw Configs and Show Outputs Raw configs are the direct configuration commands entered on networking devices (like routers or switches) using the CLI
+(Command Line Interface). These are essential for setting up device interfaces, routing protocols, security settings, VLANs, and more.
+Errors, Fixes, and Cable Map Errors are common during network configuration. For example, a mis-typed IP address on an interface can result in connectivity failures.
+If a show interface command reports "administratively down," this usually means the interface was not enabled with the no shutdown command. The fix would be returning
+to interface config mode and entering no shutdown. Another common error is mismatched subnet masks, which can be identified when devices cannot communicate even if 
+cabled correctly. Checking show running-config and ensuring all connected devices use compatible masks and IP ranges will resolve this.
+A clear cable map helps track connections and quickly troubleshoot if a link goes down or is incorrectly patched.
